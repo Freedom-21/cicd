@@ -4,10 +4,14 @@ jobs:
   first-job:
     name: Build Node
     runs-on: ubuntu-latest
-    container: node:14
+    container: node:18
     steps:
       - run: node --version
+        name: Check Node Version
       - run: npm --version
+        name: Check NPM Version
       - uses: actions/checkout@v2
+        name: Install NPM Packages
       - run: npm install
+        name: Run Application
       - run: node app.js
