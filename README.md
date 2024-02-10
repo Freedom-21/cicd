@@ -1,2 +1,2 @@
-# Getting To know Github Workflow
+# Github actions
 Learning about github action 
